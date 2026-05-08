@@ -1,16 +1,18 @@
 ---
-console.log('Это запускается в терминале, а не в браузере!');
-import Header from "./lyout/sieHeader.astro";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (() => {
+  
+  return [];
+}) satisfies GetStaticPaths;
 ---
 
 <html>
     <head>
         <meta charset="UTF-8">
-
     </head>
   <body>
-    <Header></Header>
-    <h1>Привет, мир!</h1>
+      
   </body>
 </html>
 <style>
