@@ -1,22 +1,27 @@
 ---
-import type { GetStaticPaths } from "astro";
-
-export const getStaticPaths = (() => {
-  
-  return [];
-}) satisfies GetStaticPaths;
+import SiteHead from "./lyout/sieHeader.astro";
 ---
 
 <html>
     <head>
         <meta charset="UTF-8">
+        <title>Общая информация</title>
     </head>
   <body>
-      
+      <SiteHead></SiteHead>
+
+      <h1>Пишу код. Экспериментирую. Собираю проекты.</h1>
+
+      <h2>Привет! Мне интересно всё: от веб-интерфейсов и серверной логики до машинного обучения, ботов и автоматизации. Здесь мои реальные работы — завершённые, в процессе и те, что просто было весело сделать.</h2>
   </body>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(25, 25, 25);
+    }
+    h1 {
+      position: absolute;
+    }
+  </style>
 </html>
-<style>
-  h1 {
-    color: brown;
-  }
-</style>
